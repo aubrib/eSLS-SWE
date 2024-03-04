@@ -76,7 +76,7 @@
       <div>
          <div class="d-flex justify-content-between mb-3">
             <div class="fw-bold">
-               <span><span class="fw-bold fs-5">{{forloop.counter}}.</span> <span class="me-3"> {{question.question}} </span>{{question.marks}} marks
+               <span><span class="fw-bold fs-5">{{forloop.counter}}.</span> <span class="me-3"> {{question.question}} </span>{{question.marks}} points
             </div>
             {% if question.student_answer == question.answer  %} <span class="text-success fw-bold"> <img class="mb-1" height ="18" src="{% static 'images/icon/tick.png' %}" alt=""> Correct </span> {% else %} <span class="text-danger fw-bold"> <img height ="16" class="mb-1" src="{% static 'images/icon/cross.png' %}" alt=""> Incorrect </span>  {% endif %} 
          </div>
